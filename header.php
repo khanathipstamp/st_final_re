@@ -10,7 +10,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        
+
     </head>
     <body>
 
@@ -18,15 +18,15 @@
 
             <div class="navbar-collapse collapse" id="collapsingNavbar">
                 <ul class="navbar-nav ml-auto">
-                    <h1>TT FOOD</h1>
+                    <a href="index.php" ><h1 style="color: black">TT FOOD</h1></a>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal"><img src="img/rat.png" width="50" height="50"></a>
+                        <a  href="login.php" ><img src="img/rat.png" width="50" height="50"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal"><img src="img/cat.png" width="50" height="50"></a>
+                        <a  href="register.php" ><img src="img/cat.png" width="50" height="50"></a>
                     </li>
                 </ul>
             </div>
