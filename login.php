@@ -10,19 +10,32 @@
     </head>
     <body>
         <?php include 'header.php'; ?>
+        <?php
+        require_once './ConnectDB.php';
+        error_reporting(E_ALL ^ E_NOTICE);
+        $text = $_REQUEST['text'];
+        echo "<CENTER>" . $text . "</CENTER>";
+        ?>
+        <?php
+        require_once './ConnectDB.php';
+        error_reporting(E_ALL ^ E_NOTICE);
+        $text = $_REQUEST['text'];
+        session_start();
+        session_destroy();
+        ?>
         <br>
         <div align="center">
             <div class="card"  style="width: 20%">
                 <div class="container">
                     <h2>Login</h2>
-                    <form align="left" action="/action_page.php">
+                    <form ACTION="Check.php"  name="formlogin" method="POST" id="login"  class="form-horizontal">
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            <label for="tel">Password:</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel">
                         </div>
                         <div class="form-group form-check">
                             <label class="form-check-label">
@@ -34,4 +47,3 @@
                 </div>
             </div>
         </div>
-        

@@ -14,7 +14,7 @@
         <div align="center">
             <div class="card"  style="width: 20%">
                 <div class="container">
-                    <h2>Login</h2>
+                    <h2>Register</h2>
                     <form align="left" action="/action_page.php">
                         <div class="form-group">
                             <label for="email">Email:</label>
