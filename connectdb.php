@@ -23,6 +23,7 @@ class connectdb{
             $_SESSION['tel']=$row['tel'];
             $_SESSION['name']=$row['name'];
             $_SESSION['yt']="Logout";
+            $_SESSION['add']="ADD";
             header("Location:index.php");
             
              
@@ -65,11 +66,10 @@ class connectdb{
         $sql = "INSERT INTO `img2`(`img`) VALUES ('".$name."')";
        
         if (mysqli_query($this->connect(), $sql)){
-             echo "<script type=\"text/javascript\">";
+            echo "<script type=\"text/javascript\">";
             echo "alert(\"เพิ่มเมนูสำเร็จ\");";
             
             echo "</script>";
-            echo $sql;
             header("Refresh:0; url=addFood.php"); 
         } else {
             

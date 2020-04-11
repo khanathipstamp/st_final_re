@@ -7,6 +7,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="jsimg.js"></script>
+        
     </head>
     <body>
         <?php include 'header.php'; ?>
@@ -17,7 +19,7 @@
                         <div class="container" align="left">
 
                             <h5 style="color: gray">เพิ่มเมนู</h5>
-                            <form name="form1" method="post" action="file2.php" enctype="multipart/form-data">
+                            <form name="form2" method="post" action="file2.php" enctype="multipart/form-data">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
@@ -28,7 +30,7 @@
                                 </div>
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-primary btn-block">เพิ่มเมนู</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="return check()">เพิ่มเมนู</button>
                         </form>
                         </div>
                     </div>
@@ -48,7 +50,7 @@
                                 </div>
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-primary btn-block">เพิ่มโปรโมชั้น</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="return check()">เพิ่มโปรโมชั้น</button>
                         </form>
                     </div>
                 </div></div>
