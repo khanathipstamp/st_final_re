@@ -44,35 +44,40 @@ class connectdb{
             echo $sql;
         }
     }
-    public function update($id,$name, $lname,$email,$age, $sex,$img, $status, $user, $pass){
-        $sql = "UPDATE `member` SET `fname`='".$name."',`lname`='".$lname."',`email`='".$email."',`age`='".$age."',`sex`='".$sex."',`img`='".$img."',`status`='".$status."',`user`='".$user."',`pass`='".$pass."' WHERE id='$id'";
-        if (mysqli_query($this->connect(), $sql)){   
-            header("Location:table.php"); 
-        } else {
-            echo $sql;
-        }
-        
-    }
-    public function add($name, $lname,$email,$age, $sex,$img, $status, $user, $pass){
-        $sql = "INSERT INTO `member`(`fname`, `lname`,`email`,`age`, `sex`,`img`, `status`, `user`, `pass`) VALUES ('".$name."','".$lname."','".$email."','".$age."','".$sex."','".$img."','".$status."','".$user."','".$pass."')";
+    
+    public function add($name){
+        $sql = "INSERT INTO `img`(`name_img`) VALUES ('".$name."')";
        
         if (mysqli_query($this->connect(), $sql)){
-            header("Location:table.php"); 
+            echo "<script type=\"text/javascript\">";
+            echo "alert(\"เพิ่มโปรโมชันสำเร็จ\");";
+            
+            echo "</script>";
+           
+            header("Refresh:0; url=addFood.php");
         } else {
-            echo "username same";
+            
             echo $sql;
             
         }
     }
-    public function update1($id,$name, $lname,$email,$age, $sex,$img, $status, $user, $pass){
-        $sql = "UPDATE `member` SET `fname`='".$name."',`lname`='".$lname."',`email`='".$email."',`age`='".$age."',`sex`='".$sex."',`img`='".$img."',`status`='".$status."',`user`='".$user."',`pass`='".$pass."' WHERE id='$id'";
-        if (mysqli_query($this->connect(), $sql)){   
-            header("Location:user.php"); 
-        } else {
+    public function add1($name){
+        $sql = "INSERT INTO `img2`(`img`) VALUES ('".$name."')";
+       
+        if (mysqli_query($this->connect(), $sql)){
+             echo "<script type=\"text/javascript\">";
+            echo "alert(\"เพิ่มเมนูสำเร็จ\");";
+            
+            echo "</script>";
             echo $sql;
+            header("Refresh:0; url=addFood.php"); 
+        } else {
+            
+            echo $sql;
+            
         }
-        
     }
+    
     
 }
 

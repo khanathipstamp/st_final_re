@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="login.js"></script>
     </head>
     <body>
        <?php include 'header.php'; ?>
@@ -16,7 +17,7 @@
                 <div class="container">
                     <h2>Login</h2>
 
-                    <form align="left" action="check.php" method='POST'>
+                    <form name="form1" align="left" action="check.php" method='POST'>
 
                         <div class="form-group">
                             <label for="email">Email:</label>
@@ -28,7 +29,7 @@
 
                         </div>
                         
-                        <button type="submit" name="submit" value="Login" class="btn btn-primary btn-block">Login</button>
+                        <button type="submit" name="submit" onclick="return checkl()" value="Login"  class="btn btn-primary btn-block">Login</button>
                     </form>
                 </div>
             </div>

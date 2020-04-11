@@ -30,8 +30,8 @@ and open the template in the editor.
         </div>
         <div class="row">
 
-            <div class="col-sm-9"style="width: 50%;height: 500px">
-                <div style="width: 100%;height: 100%">
+            <div class="col-sm-9"style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;margin-left: 1%">
                     <div id="demo" class="carousel slide" data-ride="carousel">
 
                         <!-- Indicators -->
@@ -64,7 +64,12 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" align="ledt"><img src="img/promotion.jpg" width="100%" height="100%">
+            <div class="col-sm-3" align="ledt" style="width: 100%;height: 100%;padding-right: 2%">
+                <img src="img/promotion.jpg" width="100%" height="50%" style="margin-bottom: 5%">
+                <img src="img/promotion.jpg" width="100%" height="50%">
+              
+                
+                
             </div>
         </div>
 

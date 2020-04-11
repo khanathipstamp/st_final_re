@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="checkk.js"></script>
     </head>
     <body>
         <?php include 'header.php'; ?>
@@ -15,7 +16,7 @@
             <div class="card"  style="width: 20%">
                 <div class="container">
                     <h2>register</h2>
-                    <form align="left" action="check.php" method='POST'>
+                    <form name="form" align="left" action="check.php" method='POST'>
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -34,7 +35,7 @@
                         </div>
                        
                        
-                        <button type="submit" name="submit" value="register" class="btn btn-primary btn-block">register</button>
+                        <button type="submit" name="submit" onclick="return check()" value="register" class="btn btn-primary btn-block">register</button>
                     </form>
                 </div>
             </div>

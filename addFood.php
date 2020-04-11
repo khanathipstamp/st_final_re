@@ -17,20 +17,19 @@
                         <div class="container" align="left">
 
                             <h5 style="color: gray">เพิ่มเมนู</h5>
-                            <form align="left" action="/action_page.php">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                               aria-describedby="inputGroupFileAddon01">
-                                        <label class="custom-file-label" for="inputGroupFile01">เพิ่มเมนู</label>
-                                    </div>
+                            <form name="form1" method="post" action="file2.php" enctype="multipart/form-data">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                                 </div>
-                                <br>
-                                <button type="submit" class="btn btn-primary btn-block">เพิ่มเมนู</button>
-                            </form>
+                                <div class="custom-file">
+                                    <input type="file" name="upload1[]" if="fileupload" multiple="multiple">
+                                    
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block">เพิ่มเมนู</button>
+                        </form>
                         </div>
                     </div>
                 </div></div>
@@ -38,15 +37,14 @@
                     <div class="container">
 
                         <h5 style="color: gray">เพิ่มโปรโมชั้น</h5>
-                        <form align="left" action="/action_page.php">
+                        <form name="form1" method="post" action="file.php" enctype="multipart/form-data">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                                 </div>
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                           aria-describedby="inputGroupFileAddon01">
-                                    <label class="custom-file-label" for="inputGroupFile01">เพิ่มโปรโมชั้น</label>
+                                    <input type="file" name="upload[]" if="fileupload" multiple="multiple">
+                                    
                                 </div>
                             </div>
                             <br>

@@ -1,8 +1,7 @@
 <?php
     error_reporting(E_ALL^E_NOTICE);
     require_once './connectdb.php';
-    $file = $_FILES['upload'];
-    $place2place="img";
+   
     $img = $file['name'];
     $email = $_POST['email'];
     $name = $_POST['name'];
