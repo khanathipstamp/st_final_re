@@ -23,7 +23,7 @@
                             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Password:</label>
+                            <label for="pwd">Phone number:</label>
                             <input type="password" class="form-control" id="pwd" placeholder="Enter phone number" name="tel">
 
                         </div>

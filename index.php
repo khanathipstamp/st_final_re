@@ -18,7 +18,6 @@ and open the template in the editor.
     </head>
     <body>
         <?php include 'header.php'; ?>
-        <?php include 'con_DB.php'; ?>
         <br>
         <div class="row">
 
