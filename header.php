@@ -13,6 +13,9 @@
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <?php 
             session_start();
+            $_SESSION['name'];
+            $_SESSION['yt'];
+            $_SESSION['add'];
         ?>
         
       
